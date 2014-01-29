@@ -26,7 +26,15 @@ sudo pip install virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv --no-site-packages online
 ```
-这样就建立了一个online的虚拟环境,为了以后不用每次都执行source /usr/local/bin/virtualenvwrapper.sh,可以把这行语句放到 ~/.bashrc 中去.
+这样就建立了一个online的虚拟环境.
+
+为了以后不用每次都执行source /usr/local/bin/virtualenvwrapper.sh,可以把这行语句放到 ~/.bashrc 中去.
+
+以后每次进入虚拟环境只需
+
+```
+workon online
+```
 
 进入flask-base中,安装需要的依赖
 
